@@ -29,8 +29,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!--<data android:host="${host_success}" android:scheme="${scheme}" />
                 <data android:host="${host_failure}" android:scheme="${scheme}" />-->
-		<data android:host="host_success" android:scheme="com.gems.connecttst" />
-                <data android:host="host_failure" android:scheme="com.gems.connecttst" />
+		<data android:host="host_success" android:scheme="com.gems.gctst" />
+                <data android:host="host_failure" android:scheme="com.gems.gctst" />
             </intent-filter>
         </config-file> 
 
