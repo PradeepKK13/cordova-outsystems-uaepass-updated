@@ -23,8 +23,8 @@ module.exports = function(context) {
 
     var content = fs.readFileSync(pathGradle,"utf8");
     if(typeof content === "string"){
-        content = content.replace(/\$success/g,configs.SCHEMASUCCESS);
-        content = content.replace(/\$failure/g,configs.SCHEMAFAIL);
+        content = content.replace(/\$success/g,"uaePassSuccess");
+        content = content.replace(/\$failure/g,"uaePassFailure");
         content = content.replace(/\$HelloCordova/g,configs.ANDROIDSCHEMA);
     }else{
         console.error(pathGradle + "could not be retrieved!");
