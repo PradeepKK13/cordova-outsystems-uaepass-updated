@@ -41,8 +41,8 @@ module.exports = function(context) {
 
     var content = fs.readFileSync(pathSwift,"utf8");
     if(typeof content === "string"){
-        content = content.replace(/\$success/g,configs.SCHEMASUCCESS);
-        content = content.replace(/\$failure/g,configs.SCHEMAFAIL);
+        content = content.replace(/\$success/g,"uaePassSuccess");
+        content = content.replace(/\$failure/g,"uaePassFailure");
     }else{
         console.error(pathSwift + "could not be retrieved!");
     }
